@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vova Almanov</title>
+	<link rel="stylesheet" href="./css/plugins/aos.css">
+	<link rel="stylesheet" href="./css/plugins/bootstrap.css">
+	<link rel="stylesheet" href="./css/plugins/swiper.css">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+
+
+	<div id="popup">
+		<form class="form popup" id="popup-form" enctype="multipart/form-data" method="POST" action="mail.php">
+						
+			<span class="title-sm text-center mb-2">Оставьте заявку</span>
+			<p class="text-center mb-5">Мы свяжемся с Вами и подберём лучший вариант</p>
+	
+			<div class="form-wrapper">
+				<span><i class="fa-solid fa-user"></i></span>
+				<input type="text" data-validate-field='person' name="user_name" placeholder="ФИО">
+
+			</div>
+
+			<div class="form-wrapper">
+				<span><i class="fa-solid fa-phone"></i></span>
+				<input class="phoneMask" data-validate-field='tel' name="user_phone" type="tel" placeholder="Телефон">
+
+			</div>
+
+			<div class="form-wrapper">
+				<span><i class="fa-solid fa-envelope"></i></span>
+				<input type="email" name="user_mail" placeholder="Почта (необязательно)">
+			</div>
+
+			<div class="form-wrapper">
+				<span><i class="fa-solid fa-ruble-sign"></i></span>
+
+				<select name="user_dolg">
+					<option selected disabled>Cумма долга</option>
+					<option>200тыс - 500тыс</option>
+					<option>500тыс - 1млн</option>
+					<option>1млн +</option>
+				</select>
+			</div>
+
+			<div class="form-button">
+				<button type="submit" class="btn btn-primary">Оставить Заявку <i
+						class="fas fa-paper-plane"></i></button>
+			</div>
+
+			<div class="form-checkbox">
+				<label>
+					<input type="checkbox" checked data-validate-field='check_box' class="form-check-input">
+					Согласен на обработку <a href="privacy.html" target="_blank"> персональных данных</a>
+				</label>
+			</div>
+
+		</form>
+	</div>
+
+	<!-- btn-main -->
+	<button class="btn btn-primary callPopUp btn-main-call hide">Получить консультацию</button>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			
+			<a class="navbar-brand" href="/">
+				<img src="img/logo-black.svg" alt="img">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item">
+						<a class="nav-link" href="javascript://0" onclick="slowScroll('#about')">
+							О нас
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="javascript://0" onclick="slowScroll('#examples')">
+							Примеры списания
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="javascript://0" onclick="slowScroll('#testimonials')">
+							Отзывы
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="javascript://0" onclick="slowScroll('#contact')">
+							Контакты
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="btn btn-primary callPopUp">
+							Заказать зовонок
+							<i class="fas fa-phone-alt"></i>
+						</a>
+					</li>
+
+				</ul>
+				
+			</div>
+
+		</div>
+	</nav>
+	<!-- /navbar -->
+
+	
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row wow fadeInLeft">
+
+				<!-- column -->
+				<div class="col-lg-4">
+
+					<a class="navbar-brand footer" href="/">
+						<img src="img/logo-white.svg" alt="img">
+					</a>
+
+					<div class="footer__text">
+						<p>
+							Lorem ipsum dolor - sit amet consectetur adipisicing elit!
+						</p>
+						<a href="https://drive.google.com/file/d/1oFyLBElZdOI31TkWJSd3G7AG7U93coVr/view?usp=sharing" target="_blank" class="footer__text__link">
+							Договор оферты
+							<i class="fas fa-external-link-alt"></i>
+						</a>
+					</div>
+					
+				</div>
+				<!-- /column -->
+
+				<!-- column -->
+				<div class="col-lg-3 ml-auto">
+					<ul class="footer__list">
+
+						<span class="footer__list__heading">Компания</span>
+
+						<li><a href="javascript://0" onclick="slowScroll('#home')">Главная</a></li>
+						<li><a href="javascript://0" onclick="slowScroll('#about')">О нас</a></li>
+						<li><a href="javascript://0" onclick="slowScroll('#examples')">Примеры дел</a></li>
+						<li><a href="javascript://0" onclick="slowScroll('#testimonials')">Отзывы</a></li>
+						<li><a href="javascript://0" onclick="slowScroll('#contact')">Контакты</a></li>
+
+					</ul>
+				</div>
+				<!-- /column -->
+
+				<!-- column -->
+				<div class="col-lg-3">
+					<ul class="footer__list">
+
+						<span class="footer__list__heading">Контакты</span>
+
+						<li>
+							<i class="fa fa-envelope"></i>
+							<a href="mailto:lawvladalm@gmail.com">
+								lawvladalm@gmail.com
+							</a>
+						</li>
+						<li><i class="fa fa-phone"></i> 
+							<a href="tel:+79525600900">
+								+7 (952) 5-600-900
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /column -->
+
+				<!-- copyright -->
+				<div class="col-12">
+					<div class="footer__copyright">
+						<span>&copy; 2021 Все права защищены | ПравоведЪ</span>
+						<a href="privacy.html" target="_blank">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<!-- copyright -->
+
+			</div>
+		</div>
+	</footer>
+	<!-- /footer -->
+
+	<script src="js/plugins/jquery.js"></script>
+	<script src="js/plugins/jquery.maskedinput.js"></script>
+	<script src="js/plugins/just-validate.min.js"></script>
+
+	<script src="js/plugins/SmoothScroll.js"></script>
+	<script src="js/plugins/bootstrap.js"></script>
+	<script src="js/plugins/lax.min.js"></script>
+	<script src="js/plugins/aos.js"></script>
+	<script src="js/plugins/swiper.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

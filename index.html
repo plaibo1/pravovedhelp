@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Банкротство физических лиц в Шахтах и Ростовской области — ЮК ПравоведЪ
+    </title>
+    <meta
+      name="description"
+      content="Банкротство физ лиц с суммой долга от 300 тыс. руб. Списываем долги по кредитам, займам, ЖКХ, налогам. Бесплатная консультация юриста по банкротству. Гарантия результата 100%. Звоните!"
+    />
+    <link rel="stylesheet" href="./css/plugins/aos.css" />
+    <link rel="stylesheet" href="./css/plugins/bootstrap.css" />
+    <link rel="stylesheet" href="./css/plugins/swiper.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="popup">
+      <form
+        class="form popup"
+        id="popup-form"
+        enctype="multipart/form-data"
+        method="POST"
+        action="mail.php"
+      >
+        <span class="title-sm text-center mb-2">Оставьте заявку</span>
+        <p class="text-center mb-5">
+          Мы свяжемся с Вами и подберём лучший вариант
+        </p>
+
+        <div class="form-wrapper">
+          <span><i class="fa-solid fa-user"></i></span>
+          <input
+            type="text"
+            data-validate-field="person"
+            name="user_name"
+            placeholder="ФИО"
+          />
+        </div>
+
+        <div class="form-wrapper">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <input
+            class="phoneMask"
+            data-validate-field="tel"
+            name="user_phone"
+            type="tel"
+            placeholder="Телефон"
+          />
+        </div>
+
+        <div class="form-wrapper">
+          <span><i class="fa-solid fa-envelope"></i></span>
+          <input
+            type="email"
+            name="user_mail"
+            placeholder="Почта (необязательно)"
+          />
+        </div>
+
+        <div class="form-wrapper">
+          <span><i class="fa-solid fa-ruble-sign"></i></span>
+
+          <select name="user_dolg">
+            <option selected disabled>Cумма долга</option>
+            <option>200тыс - 500тыс</option>
+            <option>500тыс - 1млн</option>
+            <option>1млн +</option>
+          </select>
+        </div>
+
+        <div class="form-button">
+          <button type="submit" class="btn btn-primary">
+            Оставить Заявку <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+
+        <div class="form-checkbox">
+          <label>
+            <input
+              type="checkbox"
+              checked
+              data-validate-field="check_box"
+              class="form-check-input"
+            />
+            Согласен на обработку
+            <a href="privacy.html" target="_blank"> персональных данных</a>
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <!-- btn-main -->
+    <button class="btn btn-primary callPopUp btn-main-call hide">
+      Получить консультацию
+    </button>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <!-- <img src="img/logo-black.svg" alt="img" /> -->
+          <img src="img/testLogo.svg" alt="img" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript://0"
+                onclick="slowScroll('#about')"
+              >
+                Почему мы
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript://0"
+                onclick="slowScroll('#examples')"
+              >
+                Примеры списания
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript://0"
+                onclick="slowScroll('#testimonials')"
+              >
+                Отзывы
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript://0"
+                onclick="slowScroll('#contact')"
+              >
+                Контакты
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="btn btn-primary callPopUp">
+                Заказать зовонок
+                <i class="fas fa-phone-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <header id="home">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-6">
+            <div class="badge header__badge badge-glass mb-4">
+              <img src="img/icons/law.svg" alt="law" />Юридическая компания
+              "Правоведъ"
+            </div>
+            <h1 class="title-xl mb-4">
+              Спишем ваши долги с гарантией результата!
+            </h1>
+            <!-- <h2 class="title-sm mb-4">C гарантией 100%</h2> -->
+            <p class="mb-4">
+              Спишем кредиты, сохраним имущество, избавим от коллекторов.
+              Запишитесь на бесплатный подбор варианта!
+            </p>
+            <div class="headerButtonGroup">
+              <button class="btn btn-primary callPopUp hdr-btn">
+                Получить консультацию
+              </button>
+
+              <span>
+                <a
+                  class="socialLink tg"
+                  href="https://t.me/+79525600900"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a
+                  class="socialLink wsup"
+                  href="https://wa.me/+79525600900"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-5 ml-auto">
+            <div class="img header-img">
+              <div class="header__circle"></div>
+              <img src="img/vova-header.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="videoSection">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center">
+              <span class="title-sm text-center mb-4"
+                >Приветственное видео директора</span
+              >
+              <div class="badge badge-glass mb-5">
+                <img src="img/icons/law.svg" alt="law" />Владимир Алманов
+              </div>
+            </div>
+            <div class="videoWrap">
+              <iframe
+                src="https://www.youtube.com/embed/PLRmEiSwV-c"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-5">
+            <div class="about__stickyWrap">
+              <h3 class="title-sm mb-4">Подберём варианты бесплатно!</h3>
+
+              <form
+                class="form-1"
+                enctype="multipart/form-data"
+                method="POST"
+                action="mail.php"
+              >
+                <div class="form-wrapper">
+                  <span><i class="fa-solid fa-user"></i></span>
+                  <input
+                    type="text"
+                    data-validate-field="person"
+                    name="user_name"
+                    placeholder="ФИО"
+                  />
+                </div>
+
+                <div class="form-wrapper">
+                  <span><i class="fa-solid fa-phone"></i></span>
+                  <input
+                    class="phoneMask"
+                    data-validate-field="tel"
+                    name="user_phone"
+                    type="tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-wrapper">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <input
+                    type="email"
+                    name="user_mail"
+                    placeholder="Почта (необязательно)"
+                  />
+                </div>
+
+                <div class="form-wrapper">
+                  <span><i class="fa-solid fa-ruble-sign"></i></span>
+
+                  <select name="user_dolg">
+                    <option selected disabled>Cумма долга</option>
+                    <option>200тыс - 500тыс</option>
+                    <option>500тыс - 1млн</option>
+                    <option>1млн +</option>
+                  </select>
+                </div>
+
+                <div class="form-button">
+                  <button type="submit" class="btn btn-primary">
+                    Оставить Заявку <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+
+                <div class="form-checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked
+                      data-validate-field="check_box"
+                      class="form-check-input"
+                    />
+                    Согласен на обработку
+                    <a href="privacy.html" target="_blank">
+                      персональных данных</a
+                    >
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6 ml-auto">
+            <div class="about__card">
+              <h3 class="about__card__title">Выгоднее кредитов</h3>
+              <p class="about__card__text">
+                Вы можете списать все кредиты и долги в среднем за 25% от суммы
+                всех кредитов
+              </p>
+            </div>
+
+            <div class="about__card">
+              <h3 class="about__card__title">Скорость</h3>
+              <p class="about__card__text">
+                Вместо оплаты кредитов годами, Вы можете избавиться от всех
+                долгов всего за 6-9 месяцев
+              </p>
+            </div>
+
+            <div class="about__card">
+              <h3 class="about__card__title">Имущество</h3>
+              <p class="about__card__text">
+                Если Вы допустите просрочки по кредитам, Ваше имущество могут
+                арестовать. Наша программа сохранит Ваше имущество на 100%
+              </p>
+            </div>
+
+            <div class="about__card">
+              <h3 class="about__card__title">Гибкая программа</h3>
+              <p class="about__card__text">
+                Наши программы и услуги гибкие, и подходят каждому, кому сложно
+                платить кредиты и долги
+              </p>
+            </div>
+
+            <div class="about__card">
+              <h3 class="about__card__title">Рассрочка</h3>
+              <p class="about__card__text">
+                Все наши программы имеют внутреннюю рассрочку. Вы можете
+                оплачивать услуги в комфортном режиме
+              </p>
+            </div>
+
+            <div class="about__card">
+              <h3 class="about__card__title">Вместо кредитов</h3>
+              <p class="about__card__text">
+                Все наши услуги предусматривают полное освобождение от оплаты
+                любых кредитов и долгов
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner text-center">
+      <div class="bannerContainer container">
+        <div class="darklayout"></div>
+        <h3 class="title-xl title-white mb-3">Думаете, как лучше поступить?</h3>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-9">
+            <p class="mb-5">
+              Просто заполните форму, и мы подберём лучший вариант, как избавить
+              Вас от кредитов и долгов!
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-primary callPopUp hdr-btn">
+          Получить консультацию
+        </button>
+      </div>
+    </section>
+
+    <section class="examplesOfDebt" id="examples">
+      <div class="container">
+        <h2 class="title-sm mb-4 mb-md-5">Примеры списания долгов</h2>
+
+        <div class="debtDocSlider">
+          <div class="debtDocSlider__wrap">
+            <div class="debtDocSlider__wrap__slide">
+              <iframe
+                src="https://drive.google.com/file/d/11_f5RSzzCGhjKG-6wFu4FNtdO6CmLF9m/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+            <div class="debtDocSlider__wrap__slide">
+              <iframe
+                src="https://drive.google.com/file/d/1RXig4KSJzOJwTrul-3-DLjYQsJtbgwK-/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+
+            <div class="debtDocSlider__wrap__slide">
+              <iframe
+                src="https://drive.google.com/file/d/16gEownaf3_JVpQSScIYDgB1HkwMn-XRe/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+
+            <div class="debtDocSlider__wrap__slide">
+              <iframe
+                src="https://drive.google.com/file/d/10flKXRu2F7eSJJpX6SvdCnVzKizX7Lps/preview"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="debtDocSlider__nav">
+            <div class="debtDocSlider__nav__counter">1/4</div>
+            <div class="debtDocSlider__nav__prev">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="debtDocSlider__nav__next">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="swiper debtSwiper">
+              <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide">
+                  <div class="debtSwiper__card">
+                    <div class="debtSwiper__card__text">
+                      <span><strong>Долг до:</strong> 4 700 000 руб</span>
+                      <span><strong>Долг после:</strong> 0 руб</span>
+                    </div>
+                    <div class="debtSwiper__card__img">
+                      <div class="debtSwiper__card__img__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <img src="img/debt1.png" alt="img" />
+                    </div>
+                    <div class="debtSwiper__card__link">
+                      <a
+                        href="https://kad.arbitr.ru/Document/Pdf/7b83dc8e-84e3-4e5e-9456-603ad667ae64/2e01a380-c55c-44dc-8aa5-2bd4f6a4950c/A40-161277-2018_20211122_Opredelenie.pdf?isAddStamp=True"
+                        target="_blank"
+                        >Смотреть на сайте суда</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="swiper-slide">
+                  <div class="debtSwiper__card">
+                    <div class="debtSwiper__card__text">
+                      <span><strong>Долг до:</strong> 850 000 руб</span>
+                      <span><strong>Долг после:</strong> 0 руб</span>
+                    </div>
+                    <div class="debtSwiper__card__img">
+                      <div class="debtSwiper__card__img__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <img src="img/debt1.png" alt="img" />
+                    </div>
+                    <div class="debtSwiper__card__link">
+                      <a
+                        href="https://kad.arbitr.ru/Document/Pdf/edb9fbe2-8730-42c6-8557-4e2ff158c18c/acb267fd-298f-4a46-bc41-fd5f8a657dd7/A53-26678-2020_20210630_Opredelenie.pdf?isAddStamp=True"
+                        target="_blank"
+                        >Смотреть на сайте суда</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="swiper-slide">
+                  <div class="debtSwiper__card">
+                    <div class="debtSwiper__card__text">
+                      <span><strong>Долг до:</strong> 1 300 000 руб</span>
+                      <span><strong>Долг после:</strong> 0 руб</span>
+                    </div>
+                    <div class="debtSwiper__card__img">
+                      <div class="debtSwiper__card__img__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <img src="img/debt1.png" alt="img" />
+                    </div>
+                    <div class="debtSwiper__card__link">
+                      <a
+                        href="https://kad.arbitr.ru/Document/Pdf/1bc77075-7df8-4a49-b8f0-8dc464e4c140/ea78577d-12f3-4921-9f91-08f7d0c7cf76/A12-13945-2020_20210111_Opredelenie.pdf?isAddStamp=True"
+                        target="_blank"
+                        >Смотреть на сайте суда</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="swiper-slide">
+                  <div class="debtSwiper__card">
+                    <div class="debtSwiper__card__text">
+                      <span><strong>Долг до:</strong> 900 000 руб</span>
+                      <span><strong>Долг после:</strong> 0 руб</span>
+                    </div>
+                    <div class="debtSwiper__card__img">
+                      <div class="debtSwiper__card__img__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <img src="img/debt1.png" alt="img" />
+                    </div>
+                    <div class="debtSwiper__card__link">
+                      <a
+                        href="https://kad.arbitr.ru/Document/Pdf/fcbd5438-d2d1-454c-9752-d3253461f463/f77feb43-df74-4e52-9e84-759338e73c37/A53-39953-2020_20210906_Opredelenie.pdf?isAddStamp=True"
+                        target="_blank"
+                        >Смотреть на сайте суда</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="title-sm mb-4 mb-md-5 text-center">
+              Что говорят наши Клиенты
+            </h2>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-11">
+            <div class="swiper testimonialsSwiper">
+              <div class="swiper-wrapper testimonialsSwiper-wrapper">
+                <!-- start 1 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Общалась с Владимиром, всегда на связи, все доходчиво и
+                      главное - отличный результат, теперь живу без долгов!
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c1.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Казакова Елена
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 2 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Столкнулась с ПравоведЪ через знакомого, рекомендация была
+                      не напрасной, все гладко и без проблем, сразу
+                      гарантировали результат и сдержали слово
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c2.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Муханова Айслу
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 3 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Все отлично, мне понравилось, что у ПравоведЪ хорошие
+                      условия и с терпением все объясняют, наконец-то нет мыслей
+                      о долгах
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c3.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Лях Вячеслав
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 4 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Не зря столько времени потратила на поиск юридической
+                      компании для банкротства, очень тщательно выбирала и
+                      теперь живу спокойной жизнью и без кредитов
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c4.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Егорова Анна
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 5 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Я очень привередлив, мне сложно угодить. ПравоведЪ одни из
+                      немногих, кто подобрал мне оптимальный вариант и меня все
+                      устроило, до самого конца
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c5.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Абросимов Владимир
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 6 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Как же мне повезло, что я попала на честную и трудолюбивую
+                      компанию, посоветовать было некому, из знакомых никто не
+                      банкротился
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c6.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Созонтова Валентина
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 7 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      После дня рождения дочки это самый счастливый день, просто
+                      не описать это чувство легкости после банкротства, всех
+                      долгов будто и не было
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c7.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Галкина Ирина
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 8 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Я сначала думал, что это сказки какие-то, потому мне
+                      показали все на пальцах и в законе, не зря решился, будто
+                      задышал без кредитов
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c8.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Никифоров Олег
+                    <span>Клиент</span>
+                  </div>
+                </div>
+
+                <!-- start 9 -->
+                <div class="swiper-slide testimonialsSwiper__slide">
+                  <div class="testimonialsSwiper__slide__wrap">
+                    <div class="testimonialsSwiper__slide__quots">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+
+                    <p class="testimonialsSwiper__slide__text">
+                      Большое спасибо ПравоведЪ и Владимиру за ваше дело и ваш
+                      подход, я думала, что никогда не выберусь с этой долговой
+                      ямы!
+                    </p>
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__img">
+                    <img src="img/c9.jpg" alt="img" />
+                  </div>
+
+                  <div class="testimonialsSwiper__slide__name">
+                    Зайцева Ирина
+                    <span>Клиент</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonialsSwiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <h2 class="title-sm mb-3">
+              Обсудите свою проблему со специалистом
+            </h2>
+            <p class="mb-5">
+              Мы подберем наиболее оптимальный и интересный вариант именно для
+              Вас!
+            </p>
+
+            <div class="contact__card">
+              <div class="contact__card__icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact__card__content">
+                <div class="contact__card__content__title">Почта</div>
+                <div class="contact__card__content__text">
+                  <a href="mailto:lawvladalm@gmail.com">
+                    lawvladalm@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact__card__content">
+                <div class="contact__card__content__title">Позвоните нам</div>
+                <div class="contact__card__content__text">
+                  <a href="tel:+79525600900"> +7 (952) 5-600-900 </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="contact__card">
+						<div class="contact__card__icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="contact__card__content">
+							<div class="contact__card__content__title">Адрес</div>
+							<div class="contact__card__content__text">ул. Пушкина д13</div>
+						</div>
+					</div> -->
+          </div>
+
+          <div class="col-md-6 col-lg-5 ml-auto about__stickyWrap">
+            <form
+              class="form-2"
+              enctype="multipart/form-data"
+              method="POST"
+              action="mail.php"
+            >
+              <div class="form-wrapper">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input
+                  type="text"
+                  data-validate-field="person"
+                  name="user_name"
+                  placeholder="ФИО"
+                />
+              </div>
+
+              <div class="form-wrapper">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <input
+                  class="phoneMask"
+                  data-validate-field="tel"
+                  name="user_phone"
+                  type="tel"
+                  placeholder="Телефон"
+                />
+              </div>
+
+              <div class="form-wrapper">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input
+                  type="email"
+                  name="user_mail"
+                  placeholder="Почта (необязательно)"
+                />
+              </div>
+
+              <div class="form-wrapper">
+                <span><i class="fa-solid fa-ruble-sign"></i></span>
+
+                <select name="user_dolg">
+                  <option selected disabled>Cумма долга</option>
+                  <option>200тыс - 500тыс</option>
+                  <option>500тыс - 1млн</option>
+                  <option>1млн +</option>
+                </select>
+              </div>
+
+              <div class="form-button">
+                <button type="submit" class="btn btn-primary">
+                  Оставить Заявку <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+
+              <div class="form-checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked
+                    data-validate-field="check_box"
+                    class="form-check-input"
+                  />
+                  Согласен на обработку
+                  <a href="privacy.html" target="_blank">
+                    персональных данных</a
+                  >
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner socialBanner text-center">
+      <div class="bannerContainer container">
+        <div class="darklayout"></div>
+        <h3 class="title-xl title-white mb-3">Мы в социальных сетях!</h3>
+
+        <div class="socialBanner__links">
+          <a href="https://t.me/pravovedz" target="_blank">
+            <i class="fa-regular fa-paper-plane"></i>
+          </a>
+          <a
+            href="https://instagram.com/pravovedh?igshid=MjEwN2IyYWYwYw=="
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <!-- <div class="row d-flex justify-content-center">
+          <div class="col-lg-9">
+            <p class="mb-5">
+              Просто заполните форму, и мы подберём лучший вариант, как избавить
+              Вас от кредитов и долгов!
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-primary callPopUp hdr-btn">
+          Получить консультацию
+        </button> -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row wow fadeInLeft">
+          <!-- column -->
+          <div class="col-lg-4">
+            <a class="navbar-brand footer" href="/">
+              <!-- <img src="img/logo-white.svg" alt="img" /> -->
+              <img src="img/testLogo.svg" alt="img" />
+            </a>
+
+            <div class="footer__text">
+              <p>Ваши долги — наши проблемы!</p>
+              <a
+                href="https://drive.google.com/file/d/1KgTS87ygIjMgmDjAD6dCusDpNCvhUFR8/preview"
+                target="_blank"
+                class="footer__text__link"
+              >
+                Договор оферты
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /column -->
+
+          <!-- column -->
+          <div class="col-lg-3 ml-auto">
+            <ul class="footer__list">
+              <span class="footer__list__heading">Компания</span>
+
+              <li>
+                <a href="javascript://0" onclick="slowScroll('#home')"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="javascript://0" onclick="slowScroll('#about')"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a href="javascript://0" onclick="slowScroll('#examples')"
+                  >Примеры дел</a
+                >
+              </li>
+              <li>
+                <a href="javascript://0" onclick="slowScroll('#testimonials')"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a href="javascript://0" onclick="slowScroll('#contact')"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /column -->
+
+          <!-- column -->
+          <div class="col-lg-3">
+            <ul class="footer__list">
+              <span class="footer__list__heading">Контакты</span>
+
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:lawvladalm@gmail.com"> lawvladalm@gmail.com </a>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <a href="tel:+79525600900"> +7 (952) 5-600-900 </a>
+              </li>
+              <li class="footer__socialLink">
+                <div style="display: flex; align-items: center">
+                  <a
+                    class="socialLink tg"
+                    href="https://t.me/+79525600900"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                  <a
+                    class="socialLink wsup"
+                    href="https://wa.me/+79525600900"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- /column -->
+
+          <!-- copyright -->
+          <div class="col-12">
+            <div class="footer__copyright">
+              <span
+                >&copy; <span id="autoDateNow"></span> Все права защищены |
+                ПравоведЪ</span
+              >
+              <a href="privacy.html" target="_blank"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+          <!-- copyright -->
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <script src="js/plugins/jquery.js"></script>
+    <script src="js/plugins/jquery.maskedinput.js"></script>
+    <script src="js/plugins/just-validate.min.js"></script>
+
+    <script src="js/plugins/SmoothScroll.js"></script>
+    <script src="js/plugins/bootstrap.js"></script>
+    <script src="js/plugins/lax.min.js"></script>
+    <!-- <script src="js/plugins/aos.js"></script> -->
+    <script src="js/plugins/swiper.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
